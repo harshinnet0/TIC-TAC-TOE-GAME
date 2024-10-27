@@ -1,0 +1,80 @@
+*{
+    margin: 0%;
+
+}
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    
+}
+
+.container {
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    background-color: aquamarine;
+
+
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    
+    
+    margin-left: 84vh;
+    margin-top: 25vh;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #333;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #e0e0e0;
+}
+
+.status {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: red;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    .cell {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+    
+    .status {
+        font-size: 1.2em; /* Smaller status font size */
+    }
+    
+    .button {
+        width: 100%; /* Full width button */
+        padding: 15px; /* More padding for better touch targets */
+    }
+    
+    .board {
+        max-width: 90%; /* Use more screen space on smaller devices */
+    }
+}
+
+
